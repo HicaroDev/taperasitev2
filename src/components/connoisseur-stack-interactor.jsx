@@ -2,7 +2,11 @@ import { cn } from "@/lib/utils";
 import { useRef, useState, useLayoutEffect } from "react";
 import gsap from "gsap";
 import img1 from "../assets/Screenshot_1.png";
+import img2 from "../assets/Screenshot_2.png";
+import img3 from "../assets/Screenshot_3.png";
 import img4 from "../assets/Screenshot_4.png";
+import img5 from "../assets/Screenshot_5.png";
+import img6 from "../assets/Screenshot_6.png";
 import img7 from "../assets/Screenshot_7.png";
 
 const defaultItems = [
@@ -16,12 +20,36 @@ const defaultItems = [
     num: "02",
     name: "ENTRADA SUPREMA",
     clipId: "clip-hexagons",
-    image: img4
+    image: img2
   },
   {
     num: "03",
     name: "E O MAGNIFICO",
     clipId: "clip-pixels",
+    image: img3
+  },
+  {
+    num: "04",
+    name: "SABOR ÚNICO",
+    clipId: "clip-original",
+    image: img4
+  },
+  {
+    num: "05",
+    name: "TRADIÇÃO",
+    clipId: "clip-hexagons",
+    image: img5
+  },
+  {
+    num: "06",
+    name: "QUALIDADE",
+    clipId: "clip-pixels",
+    image: img6
+  },
+  {
+    num: "07",
+    name: "TAPERA BRASA",
+    clipId: "clip-original",
     image: img7
   }
 ];
