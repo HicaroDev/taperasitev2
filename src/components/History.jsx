@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ownerImage from '../assets/local.png'; // Using local.png as a placeholder for the history image
+import ownerImage from '../assets/Founder.jfif'; // Using the founder image
 import ketchupIcon from '../assets/logo.png'; // Using logo as a decorative element
 
 const History = () => {

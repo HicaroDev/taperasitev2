@@ -59,12 +59,20 @@ export default function Footer() {
                         </nav>
                     </div>
                     <div>
+                        <h3 className="mb-4 text-lg font-semibold uppercase font-anton">Horário de Funcionamento</h3>
+                        <div className="space-y-2 text-sm text-muted-foreground">
+                            <p>Terça a Quinta: 18:00 - 23:00</p>
+                            <p>Sexta a Domingo: 18:00 - 23:30</p>
+                            <p className="pt-2 text-brand-red font-bold">Delivery em Senador Canedo</p>
+                        </div>
+                    </div>
+                    <div>
                         <h3 className="mb-4 text-lg font-semibold uppercase font-anton">Contatos</h3>
                         <address className="space-y-2 text-sm not-italic text-muted-foreground">
-                            <p>Rua da Tapera, 123 - Centro</p>
-                            <p>São Paulo, SP</p>
-                            <p>WhatsApp: (11) 99999-9999</p>
-                            <p>E-mail: contato@taperaburguer.com.br</p>
+                            <p>Av. Itapurã, Quadra 17 Lote 12-A</p>
+                            <p>Vila Santa Rosa, Sen. Canedo - GO</p>
+                            <p>75251-394</p>
+                            <p className="pt-2">WhatsApp: (62) 99999-9999</p>
                         </address>
                     </div>
                     <div className="relative">
@@ -73,44 +81,34 @@ export default function Footer() {
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <Button variant="outline" size="icon" className="rounded-full border-zinc-800 hover:bg-brand-red hover:text-white">
-                                            <Facebook className="h-4 w-4" />
-                                            <span className="sr-only">Facebook</span>
-                                        </Button>
+                                        <a href="https://www.instagram.com/taperaburger/" target="_blank" rel="noopener noreferrer">
+                                            <Button variant="outline" size="icon" className="rounded-full border-zinc-800 hover:bg-brand-red hover:text-white">
+                                                <Instagram className="h-4 w-4" />
+                                                <span className="sr-only">Instagram</span>
+                                            </Button>
+                                        </a>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Curta no Facebook</p>
+                                        <p>@taperaburger</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <Button variant="outline" size="icon" className="rounded-full border-zinc-800 hover:bg-brand-red hover:text-white">
-                                            <Twitter className="h-4 w-4" />
-                                            <span className="sr-only">Twitter</span>
-                                        </Button>
+                                        <a href="https://linktr.ee/taperaburger" target="_blank" rel="noopener noreferrer">
+                                            <Button variant="outline" size="icon" className="rounded-full border-zinc-800 hover:bg-brand-red hover:text-white">
+                                                <Send className="h-4 w-4" />
+                                                <span className="sr-only">Linktree</span>
+                                            </Button>
+                                        </a>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Siga no Twitter</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger asChild>
-                                        <Button variant="outline" size="icon" className="rounded-full border-zinc-800 hover:bg-brand-red hover:text-white">
-                                            <Instagram className="h-4 w-4" />
-                                            <span className="sr-only">Instagram</span>
-                                        </Button>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Siga no Instagram</p>
+                                        <p>Faça seu pedido</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
                         </div>
-
                     </div>
                 </div>
                 <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-zinc-900 pt-8 text-center md:flex-row">
