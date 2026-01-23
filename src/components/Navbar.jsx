@@ -20,14 +20,16 @@ const Navbar = () => {
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-brand-dark/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-4'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    className="flex items-center gap-2"
-                >
-                    <img src={logo} alt="Tapera Burguer" className="h-12 md:h-16 drop-shadow-lg" />
-                    <span className="hidden md:block font-display text-xl text-white tracking-widest uppercase">Tapera<span className="text-brand-red">Burguer</span></span>
-                </motion.div>
+                <a href="#início">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        className="flex items-center gap-2 cursor-pointer"
+                    >
+                        <img src={logo} alt="Tapera Burguer" className="h-12 md:h-16 drop-shadow-lg" />
+                        <span className="hidden md:block font-display text-xl text-white tracking-widest uppercase">Tapera<span className="text-brand-red">Burguer</span></span>
+                    </motion.div>
+                </a>
 
                 <ul className="hidden md:flex gap-8">
                     {['Início', 'Cardápio', 'A Tapera', 'Contato'].map((item) => (

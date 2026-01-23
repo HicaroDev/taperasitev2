@@ -29,7 +29,7 @@ const HeroParallax = () => {
     }, []);
 
     return (
-        <section ref={ref} className="relative h-screen w-full overflow-hidden bg-brand-dark">
+        <section id="início" ref={ref} className="relative h-screen w-full overflow-hidden bg-brand-dark">
             {/* Background Images with Crossfade and Parallax */}
             <div className="absolute inset-0 z-0">
                 <AnimatePresence mode="wait">
