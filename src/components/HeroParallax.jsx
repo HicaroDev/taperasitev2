@@ -20,13 +20,18 @@ const HeroParallax = () => {
     const opacityText = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
     const scaleText = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
 
-    // Loop automático das imagens a cada 12 segundos
+    // Loop automático das imagens a cada 4 segundos
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentImageIndex((prev) => (prev + 1) % images.length);
-        }, 12000);
+        }, 4000); // Mudado de 12000 para 4000
         return () => clearInterval(timer);
     }, []);
+
+    // Função para mudar manualmente a imagem
+    const handleIndicatorClick = (index) => {
+        setCurrentImageIndex(index);
+    };
 
     return (
         <section id="início" ref={ref} className="relative h-screen w-full overflow-hidden bg-brand-dark">
@@ -90,12 +95,17 @@ const HeroParallax = () => {
                     </a>
                 </motion.div>
 
-                {/* Progress Indicators for Slider */}
+                {/* Progress Indicators for Slider - Now Clickable */}
                 <div className="absolute bottom-20 left-1/2 flex -translate-x-1/2 gap-3">
                     {images.map((_, i) => (
-                        <div
+                        <button
                             key={i}
-                            className={`h-1.5 transition-all duration-500 rounded-full ${i === currentImageIndex ? 'w-8 bg-brand-red' : 'w-2 bg-white/30'}`}
+                            onClick={() => handleIndicatorClick(i)}
+                            className={`h-1.5 transition-all duration-500 rounded-full cursor-pointer hover:opacity-100 ${i === currentImageIndex
+                                    ? 'w-8 bg-brand-red'
+                                    : 'w-2 bg-white/30 hover:bg-white/50'
+                                }`}
+                            aria-label={`Ir para imagem ${i + 1}`}
                         />
                     ))}
                 </div>
