@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import hero01 from '../assets/hero01.png';
-import hero02 from '../assets/hero02.jpg';
-import hero03 from '../assets/hero03.jpg';
+import hero01 from '../assets/hero01-optimized.jpg';
+import hero02 from '../assets/hero02-optimized.jpg';
+import hero03 from '../assets/hero03-optimized.jpg';
 
 const images = [hero01, hero02, hero03];
 
